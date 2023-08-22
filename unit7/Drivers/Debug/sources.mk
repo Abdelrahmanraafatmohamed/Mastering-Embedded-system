@@ -22,5 +22,7 @@ OBJCOPY_BIN :=
 SUBDIRS := \
 Src \
 Startup \
+Stm32_F103C6_Drivers/KEYPAD_Driver \
+Stm32_F103C6_Drivers/LCD_Driver \
 Stm32_F103C6_Drivers \
 

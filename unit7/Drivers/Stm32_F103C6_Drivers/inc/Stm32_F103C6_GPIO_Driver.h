@@ -21,13 +21,13 @@
 typedef struct
 {
 	uint16_t GPIO_PinNumber ;  		//Specifies the GPIO Pins to be configured
-	//This parameter must be set based on @ref GPIO_PINS_define
+	                                //This parameter must be set based on @ref GPIO_PINS_define
 
 	uint8_t GPIO_MODE		; 	   //Specifies the Operating mode for the selected pins
-	//This parameter can be a value of @ref GPIO_MODE_define
+	                               //This parameter can be a value of @ref GPIO_MODE_define
 
 	uint8_t GPIO_Output_Speed ;   //Specifies the speed mode for the selected pins
-	//This parameter can be a value of @ref GPIO_SPEED_define
+	                              //This parameter can be a value of @ref GPIO_SPEED_define
 
 }GPIO_PinConfig_t;
 

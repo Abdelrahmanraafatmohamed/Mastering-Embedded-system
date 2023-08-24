@@ -90,7 +90,7 @@ void MCAL_GPIO_Init (GPIO_TypeDef* GPIOX , GPIO_PinConfig_t* pinconfig)
 	if((pinconfig->GPIO_MODE == GPIO_MODE_OUTPUT_AF_OD)||(pinconfig->GPIO_MODE == GPIO_MODE_OUTPUT_AF_PP)||(pinconfig->GPIO_MODE == GPIO_MODE_OUTPUT_OD)||(pinconfig->GPIO_MODE == GPIO_MODE_OUTPUT_PP))
 	{
 		// set CNF8[1:0] MODE[1:0]
-		PIN_Config = (((pinconfig->GPIO_MODE - 4 << 2) | (pinconfig->GPIO_Output_Speed)) & 0x0F);
+		PIN_Config =( (((pinconfig->GPIO_MODE - 4) << 2) | (pinconfig->GPIO_Output_Speed)) & 0x0F);
 
 
 	}

@@ -164,7 +164,7 @@ void LCD_check_lcd_isbusy() {
 }
 
 void LCD_WRITE_COMMAND(unsigned char command) {
-	LCD_check_lcd_isbusy();
+//	LCD_check_lcd_isbusy();
 	MCAL_GPIO_WritePort(LCD_CTRL, command);
 //	LCD_CTRL->BRR = (LCD_CTRL->BRR & 0x00FF) | (command);
 //	LCD_CTRL->CRL ^= (LCD_CTRL->CRL ^ command) & 0x00ff;

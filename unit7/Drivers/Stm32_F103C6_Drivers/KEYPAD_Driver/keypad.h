@@ -29,6 +29,4 @@
 void Keypad_init();
 char Keypad_getkey();
 
-
-
 #endif /* KEYPAD_H_ */

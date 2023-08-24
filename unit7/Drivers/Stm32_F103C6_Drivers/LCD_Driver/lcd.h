@@ -10,6 +10,7 @@
 #define LCD_H_
 
 
+#define F_CPU 1000000UL
 #include "stm32f103x6.h"
 #include "Stm32_F103C6_gpio_driver.h"
 
@@ -52,8 +53,5 @@ void LCD_check_lcd_isbusy(void);
 void LCD_lcd_kick(void);
 void LCD_clear_screen();
 void LCD_GOTO_XY(unsigned char line, unsigned char position);
-void LCD_display_number(int number);
-void LCD_display_real_number(double number);
-void LCD_character();
 
 #endif /* LCD_H_ */
